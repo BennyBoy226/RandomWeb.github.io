@@ -3,13 +3,30 @@
 <body>
 <head>
 <style>
-body { background-color: darkblue;
-}
-body { color: white; 
-}
-body { font-size: 30px;
+body { 
+color: white; 
+font-size: 30px;
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+var x = Math.floor(Math.random() * 256);
+var y = Math.floor(Math.random() * 256);
+var z = Math.floor(Math.random() * 256);
+if (x === 0){
+    var x = Math.floor(Math.random() * 256);
+}
+if (y === 0){
+    var y = Math.floor(Math.random() * 256);
+}
+if (z === 0){
+    var z = Math.floor(Math.random() * 256);
+}
+var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+document.body.style.background = bgColor;
+});
+</script>
 <title>Welcome to my first website!</title>
 </head>
 <h1>Welcome to my website!</h1>
@@ -28,5 +45,7 @@ body { font-size: 30px;
 </br>
 </center>
 <br><small>Let me know if there are spelling or grammar errors!<small></br>
+<a href="https://pizzarules668.github.io/">
+<p><font size="2">Help From Pizzarules668 (Made random background color)</font></p></a>
 </body>
 </html>
